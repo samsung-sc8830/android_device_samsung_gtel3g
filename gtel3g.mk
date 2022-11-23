@@ -18,7 +18,7 @@ LOCAL_PATH := device/samsung/gtel3g
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit from vendor tree
-$(call inherit-product-if-exists, vendor/samsung/gtel3g/gtel3g-vendor.mk)
+$(call inherit-product, vendor/samsung/gtel3g/gtel3g-vendor.mk)
 
 # Inherit from scx30g-common device configuration
 $(call inherit-product, device/samsung/scx30g-common/common.mk)
