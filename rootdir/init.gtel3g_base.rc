@@ -26,7 +26,7 @@ on init
     setprop ro.SecEDS.enable false
 
 on charger
-    mount ext4 /dev/mmcblk0p25 /system ro wait
+    mount ext4 /dev/mmcblk0p23 /system ro wait
 
 service charger /charger
     class charger

@@ -41,9 +41,7 @@ on fs
     chmod 660 /dev/fb0
 
 on charger
-    mount ext4 /dev/block/mmcblk0p25 /system ro wait
-    exec sfsck /dev/block/mmcblk0p27 ext4
-    mount ext4 /dev/block/mmcblk0p27 /data nosuid,nodev,noatime wait,encryptable=footer,check
+    mount ext4 /dev/mmcblk0p23 /system ro wait
 
 service charger /charger
     class charger
